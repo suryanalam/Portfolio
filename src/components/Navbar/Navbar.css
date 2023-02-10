@@ -28,7 +28,7 @@
 }
  
 .nav_link {
-    font-size: var(--fz-sm);
+    font-size: var(--fz-md);
     color: var(--lightest-slate);
     cursor: pointer;
     margin-left: 26px;

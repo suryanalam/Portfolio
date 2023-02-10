@@ -5,7 +5,7 @@ const Home = () => {
     <section id="Home" className="home_section">
       <p className="home_greet">Hi, my name is</p>
 
-      <h1 className="home_heading_1">Surya Nalam</h1>
+      <h1 className="home_heading_1">Surya Narayana Murthy Nalam</h1>
 
       <h1 className="home_heading_2">A Frontend Developer</h1>
 

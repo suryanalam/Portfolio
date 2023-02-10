@@ -1,5 +1,6 @@
 import React from "react";
 import Heading from "../../components/Heading/Heading";
+import profile_img from '../../profile_img.png'
 import "./About.css";
 
 const About = () => {
@@ -27,7 +28,7 @@ const About = () => {
         </div>
 
         <div className="about_right">
-          <img src="" alt="image" className="about_profile_img" />
+          <img src={profile_img} alt="image" className="about_profile_img" />
 
           <div className="about_img_border" />
         </div>

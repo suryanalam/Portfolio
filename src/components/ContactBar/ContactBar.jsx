@@ -9,6 +9,7 @@ const ContactBar = () => {
   return (
     <div className="contact_bar_wrapper">
       <div className="contact_bar">
+      <div className="contact_bar_line"></div>
         <a
           href="#random"
           target="_blank"
@@ -43,12 +44,7 @@ const ContactBar = () => {
         </a>
         <div className="contact_bar_line"></div>
       </div>
-      <div className="contact_bar">
-        <a href="mailto:suryanalam3011@gmail.com" className="contact_bar_email">
-          suryanalam3011@gmail.com
-        </a>
-        <div className="contact_bar_line"></div>
-      </div>
+      
     </div>
   );
 };

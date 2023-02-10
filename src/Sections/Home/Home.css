@@ -17,12 +17,12 @@
  
 .home_heading_1 {
   color: var(--lightest-slate);
-  font-size: 80px;
+  font-size: 50px;
   margin: 0;
 }
  
 .home_heading_2 {
-  font-size: 55px;
+  font-size: 35px;
   margin: 0;
   color: var(--slate);
 }
