@@ -6,6 +6,7 @@ const Experience = () => {
   const [currentIdx, setCurrentIndex] = useState(0);
   return (
     <section id="Experience">
+      <h1 className="headers">Education</h1>
       <div className="experience_container">
         <div className="experience_left">
             {

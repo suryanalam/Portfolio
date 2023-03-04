@@ -1,4 +1,6 @@
 import './App.css';
+import { useState, useEffect } from 'react';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
 //pages
 import Home from './Sections/Home/Home';
@@ -12,6 +14,26 @@ import Navbar from './components/Navbar/Navbar';
 import ContactBar from './components/ContactBar/ContactBar';
 
 function App() {
+  
+  const [showTopBtn, setShowTopBtn] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 400) {
+                setShowTopBtn(true);
+            } else {
+                setShowTopBtn(false);
+            }
+        });
+    }, []);
+
+    const goToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+      });
+    }
+
   return (
     <main className="main">
       <Navbar />
@@ -21,9 +43,11 @@ function App() {
       <Work />  
       <Contact /> 
       <ContactBar />  
+     {
+        showTopBtn &&  <button className='navigate-btn' onClick={goToTop}><KeyboardArrowUpIcon className='navigate-icon' /></button>
+     }
     </main>
   );
 }
 
 export default App;
-

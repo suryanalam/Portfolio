@@ -5,6 +5,7 @@ import constant from "../../constant.json";
 const Work = () => {
   return (
     <section id="Work">
+    <h1 className="headers">Work</h1>
       <div className="work_container">
         {
           constant.projects.map((project, idx) => (
