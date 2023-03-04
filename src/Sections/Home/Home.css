@@ -1,48 +1,62 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .home_section {
-  width: calc(100% - 200px);
-  min-height: 100vh;
-  max-height: 800px;
+  min-width: 80vw;
+  min-height: 90vh;
+  margin-top: 10vh;
+  margin-left: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: var(--font-sans);
+  align-items: flex-start;
 }
  
 .home_greet {
   font-family: var(--font-mono);
-  font-size: var(--fz-xl);
+  font-size: var(--fz-md);
   color: var(--green);
-  margin: 10px 0;
+  letter-spacing: 0.5px;
+  line-height: 6vh;
 }
  
 .home_heading_1 {
   color: var(--lightest-slate);
-  font-size: 50px;
-  margin: 0;
+  font-size: var(--fz-xxl);
+  letter-spacing: 1px;
+  line-height: 8vh;
 }
  
 .home_heading_2 {
-  font-size: 35px;
-  margin: 0;
+  font-size: var(--fz-lg);
   color: var(--slate);
+  letter-spacing: 1px;
+  line-height: 8vh;
 }
  
 .home_desc {
-  font-size: var(--fz-md);
-  width: 65%;
+  max-width: 76vw;
+  font-family: var(--font-verdana);
+  font-size: var(--fz-sm);
+  letter-spacing: 0.5px;
+  line-height: 4vh;
+  background-color: var(--light-navy);
+  padding: 0.5rem;
 }
  
 .home_btn {
   outline: none;
-  font-size: var(--fz-md);
+  margin-top:2rem;
+  padding: 1rem 1.5rem;
   background: transparent;
   border: 1px solid var(--green);
+  font-size: var(--fz-md);
   color: var(--green);
   border-radius: 5px;
-  padding: 15px 20px;
-  width: 200px;
   cursor: pointer;
-  margin-top: 15px;
 }
  
 .home_btn:hover {

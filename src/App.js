@@ -9,22 +9,18 @@ import Contact from './Sections/contact/Contact';
 
 //components
 import Navbar from './components/Navbar/Navbar';
-import Footer from './components/Footer/Footer';
 import ContactBar from './components/ContactBar/ContactBar';
 
 function App() {
   return (
     <main className="main">
-    <Navbar />
-      <div className="app_section_container">
-        <Home />
-        <About /> 
-        <Experience /> 
-        <Work />  
-        <Contact /> 
-      </div>
-       <ContactBar />  
-      <Footer />
+      <Navbar />
+      <Home />
+      <About /> 
+      <Experience /> 
+      <Work />  
+      <Contact /> 
+      <ContactBar />  
     </main>
   );
 }

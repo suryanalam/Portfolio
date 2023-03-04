@@ -1,70 +1,55 @@
 {
     "experiences":[
         { 
-            "company":"Amazon",
+            "education":"B.Tech",
             "link": "/",
-            "title": "fullstack developer",
-            "duration":"April 2022 - Feb 2023",
-            "desc": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit  sed do eiusmod",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit  sed do eiusmod"
-                
-            ]
+            "institute":"Lovely Professional University",
+            "location":"Punjab, India",
+            "duration":"Aug'20 -  Present",
+            "aggregate":"7.77 CGPA (current)"
         },
         { 
-            "company":"Cognizant",
+            "education":"Secondary",
             "link": "/",
-            "title": "frontend developer",
-            "duration":"Jan 2022 - May 2022",
-            "desc": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit  sed do eiusmod",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit  sed do eiusmod"
-            ]
+            "institute":"Sri Chaitanya Junior Collage",
+            "location":"Andhra Pradesh, India",
+            "duration":"Jun'18 - May'20",
+            "aggregate":"9.32 GPA"
         },
         { 
-            "company":"Infosys",
+            "education":"Matriculation",
             "link": "/",
-            "title": "software developer",
-            "duration":"Nov 2020 - Dec 2021",
-            "desc": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit  sed do eiusmod",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit  sed do eiusmod"
-                
-            ]
+            "institute":"Narayana Techno School",
+            "location":"Andhra Pradesh, India",
+            "duration":"May'18",
+            "aggregate":"8.73 GPA"
         }     
     ],
+    
     "projects": [
         {
             "title": "Word Guess Game",
-            "image": "img.png",
-            "desc":"exercitation ullamco laboris nisi ut",
+            "desc":"This game is to Guess the word that is hidden, based on the certain hints and limited chances",
             "skills":["HTML","CSS", "Javascript"],
-            "github": "/",
-            "link": "/"
+            "link": "https://suryanalam.github.io/guess_word_bullseye/"
         },
         {
             "title": "Admin Dashboard",
-            "image": "img.png",
-            "desc":"exercitation ullamco laboris nisi ut",
-            "skills":["React","Javascript","HTML","CSS"],
-            "github": "/",
-            "link": "/"
+            "desc":"A Dashboard to manage the administration of the company",
+            "skills":["HTML","CSS","Javascript","React","ChartJs"],
+            "link": "https://suryanalam.github.io/capstone-project/"
         },
         {
-            "title": "Notes Management System",
-            "image": "img.png",
-            "desc":"exercitation ullamco laboris nisi ut",
-            "skills":["React", "Express", "Mongodb"],
-            "github": "/",
-            "link": "/"
+            "title": "Notes Application",
+            "desc":"An application to jot down the important things",
+            "skills":["HTML","CSS","Javascript","React"],
+            "link": "https://mynotes-e8f61.web.app/"
         },
         {
-            "title": "Netflix clone",
-            "image": "img.png",
-            "desc":"exercitation ullamco laboris nisi ut",
-            "skills":["Javascript","HTML","CSS"],
-            "github": "/",
-            "link": "/"
+            "title": "Weather PWA",
+            "desc":"Progressive Web Application to monitor weather conditions throught the world",
+            "skills":["HTML","CSS","React"],
+            "link": "https://weather-monitor-pwa.netlify.app/"
         }
     ]
 }

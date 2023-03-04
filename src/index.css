@@ -3,6 +3,7 @@ body {
   font-family: var(--font-mono);
   background-color: var(--navy);
   color: var(--light-slate);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
  
 html {
@@ -15,28 +16,26 @@ a {
 }
  
 :root {
-  --font-sans:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  --font-verdana: Verdana, Geneva, Tahoma, sans-serif;
+  --font-sans: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  --dark-navy: black;
-  --navy: #ED7014;
-  --light-navy:rgb(0, 0, 0,0.2);
-  --lightest-navy: rgb(255, 255, 255,0.2);
-  --transparent-navy: #D16002;
-  --navy-shadow: black;
-  --dark-slate: black;
-  --slate: #black;
-  --light-slate: rgb(0,0,0,0.7);
-  --lightest-slate: black;
-  --white: black;
-  --green: black;
-  --green-tint:rgb(0,0,0,0..5);
-  --fz-xxs: 12px;
-  --fz-xs: 13px;
+  --dark-navy: #020c1b;
+  --navy: #0a192f;
+  --light-navy: #112240;
+  --lightest-navy: #233554;
+  --transparent-navy: #0a192fd9;
+  --navy-shadow: rgba(2, 12, 27, 0.7);
+  --dark-slate: #495670;
+  --slate: #8892b0;
+  --light-slate: #a8b2d1;
+  --lightest-slate: #ccd6f6;
+  --white: #e6f1ff;
+  --green: #04d9ff;
+  --green-tint: rgba(100, 242, 255, 0.15);
   --fz-sm: 14px;
   --fz-md: 16px;
-  --fz-lg: 18px;
-  --fz-xl: 20px;
-  --fz-xxl: 22px;
-  --fz-heading: 32px;
+  --fz-lg: 20px;
+  --fz-xl: 30px;
+  --fz-xxl:36px;
 }
