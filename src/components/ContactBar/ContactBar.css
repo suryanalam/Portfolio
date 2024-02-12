@@ -1,14 +1,7 @@
-*{
-    padding: 0;
-    margin: 0;
-}
-
 .contact_bar_wrapper {
     position: fixed;
-    top: 215px;
-    right: 20px;
-    display: flex;
-    justify-content: flex-end;
+    top: 35%;
+    left: 20px;
 }
  
 .contact_bar {
@@ -17,14 +10,7 @@
     align-items: center;
     position: relative;
 }
- 
-.contact_bar_line {
-    width: 1px;
-    height: 200px;
-    margin-top:0.5rem;
-    background: var(--light-slate);
-}
- 
+  
 .contact_bar_icon {
     margin-top: 1rem;
     cursor: pointer;
@@ -33,5 +19,5 @@
  
 .contact_bar_icon:hover {
     color: var(--green);
-    transform: translateY(-3px);
+    transform: translateX(5px);
 }
