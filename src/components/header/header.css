@@ -33,7 +33,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 
 .navlink {
@@ -45,4 +45,33 @@
 
 .navlink:hover {
   color: var(--clr-aqua);
+}
+
+.menu-icon-div{
+  display: none;
+  cursor: pointer;
+}
+
+.menu-icon{
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 426px) {
+  .navbar {
+    display: none;
+  }
+
+  .menu-icon-div{
+    display: block;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .navbar{
+    gap:1rem;
+  }
+
+  .navlink{
+    font-size: var(--fz-sm);
+  }
 }

@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-// import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";

@@ -1,6 +1,6 @@
 let projects = [
     {
-        "title": "Food Ordering Application",
+        "title": "Food Ordering Platform",
 
         "name":"Hunger Burners",
 
@@ -11,7 +11,7 @@ let projects = [
         ],
 
         "skills":[
-            "React JS",
+            "ReactJS",
             "CSS3",
             "Axios",
             "Toastify",
@@ -33,9 +33,9 @@ let projects = [
         ],
 
         "skills":[
-            "React JS",
+            "ReactJS",
             "CSS3",
-            "Node JS + Express JS",
+            "NodeJS + ExpressJS",
             "MongoDB",
         ],
 
@@ -55,7 +55,7 @@ let projects = [
         ],
 
         "skills":[
-            "React JS",
+            "ReactJS",
             "CSS3",
             "Framer Motion",
             "Formik and YUP",

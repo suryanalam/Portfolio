@@ -10,40 +10,40 @@ const Projects = () => {
       <h1 className="heading">Projects</h1>
       <div className="projects-container">
         <div className="projects-left">
-          <div className="project-titles-div">
-            {projects.map((project, index) => (
-              <div
-                className={
-                  index === projectIndex
-                    ? "project-title active"
-                    : "project-title"
-                }
-                onClick={() => setProjectIndex(index)}
-              >
-                {project.title}
-              </div>
-            ))}
-          </div>
+          {projects.map((project, index) => (
+            <div
+              className={
+                index === projectIndex
+                  ? "project-title active"
+                  : "project-title"
+              }
+              onClick={() => setProjectIndex(index)}
+            >
+              {project.title}
+            </div>
+          ))}
         </div>
         <div className="projects-right">
           <h2 className="project-name">{projects[projectIndex].name}</h2>
-
           <div className="project-details-div">
             <h4 className="project-heading">Summary:</h4>
-            <ul className="project-details">
+            <ul>
               {projects[projectIndex].description.map((item, index) => (
-                <li key={index}>{item}</li>
+                <li key={index} className="details">{item}</li>
               ))}
             </ul>
           </div>
 
           <div className="project-details-div">
-            <h4 className="project-heading">Technologies Used:</h4>
-            <ul className="project-details">
+            <h4 className="project-heading">Technologies</h4>
+            <div className="technologies-div">
               {projects[projectIndex].skills.map((skill, index) => (
-                <li key={index}>{skill}</li>
+                <span key={index} className="technologies">
+                  <span className="technologies-count">{index+1}.&nbsp;</span>
+                  {skill}
+                </span>
               ))}
-            </ul>
+            </div>
           </div>
 
           <div className="project-details-div">

@@ -1,5 +1,6 @@
 import React from "react";
 import "./header.css";
+import { TiThMenu } from "react-icons/ti";
 
 const Header = () => {
   return (
@@ -15,6 +16,10 @@ const Header = () => {
           <a href="#projects" className="navlink">Projects</a>
           <a href="#contact" className="navlink">Contact</a>
       </nav>
+
+      <div className="menu-icon-div">
+        <TiThMenu className="menu-icon"/>
+      </div>
 
     </header>
   );

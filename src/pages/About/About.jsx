@@ -11,14 +11,14 @@ const About = () => {
             An undergraduate student with a focused and enlightened personality
             with a decent skill set in frontend technologies and graphic
             designing.
-          </p>
-          <p className="about-desc">
+            <br />
+            <br />
             Being Enthusiastic, he is splendid at communication additionally, he
             bagged ample work experience by being a part of a few student
             organizations at LPU and can be the best fit to play a vital role as
             a team lead.
-          </p>
-          <p className="about-desc">
+            <br />
+            <br />
             As per the technical skills, he has a good understanding of core
             concepts in computer science and engineering like OOPS, DBMS, OS,
             and Networking as well as frontend technologies like HTML5, CSS3,
