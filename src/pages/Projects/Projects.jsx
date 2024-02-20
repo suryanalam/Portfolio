@@ -9,7 +9,7 @@ const Projects = () => {
     <section id="projects" className="section-bg">
       <h1 className="heading">Projects</h1>
       <div className="projects-container">
-        <div className="projects-left">
+        <div className="projects-left" data-aos = "fade-up">
           {projects.map((project, index) => (
             <div
               className={
@@ -23,7 +23,7 @@ const Projects = () => {
             </div>
           ))}
         </div>
-        <div className="projects-right">
+        <div className="projects-right" data-aos = "fade-up">
           <h2 className="project-name">{projects[projectIndex].name}</h2>
           <div className="project-details-div">
             <h4 className="project-heading">Summary:</h4>

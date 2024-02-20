@@ -20,15 +20,15 @@
 }
 
 .about-desc {
-  text-align:justify;
-  line-height: 1.75rem;
-  font-size: 1.75vw;
+  text-align: justify;
+  line-height: 2rem;
+  font-size: 1.25vw;
 }
 
 .about-right{
-  padding: 2rem;
-  width: 350px;
-  height: 350px;
+  padding: 1rem;
+  width: 375px;
+  height: 375px;
 }
 
 .about-img {
@@ -41,7 +41,7 @@
   background-color: var(--clr-light-navy);
 }
 
-@media screen and (max-width: 426px){
+@media screen and (max-width: 500px){
   .about-container{
     flex-direction: column-reverse;
     justify-content: start;
@@ -66,7 +66,7 @@
 
 }
 
-@media screen and (min-width: 426px) and (max-width: 701px) {
+@media screen and (min-width: 500px) and (max-width: 701px) {
   .about-container{
     flex-direction: column-reverse;
     justify-content: start;
@@ -86,7 +86,7 @@
 
   .about-desc {
     line-height: 1.5rem;
-    font-size: 2.25vw;
+    font-size: 2vw;
   }
 }
 
@@ -96,12 +96,35 @@
     width: 250px;
     height: 250px;
   }
+
+  .about-desc {
+    line-height: 1.5rem;
+    font-size: 1.5vw;
+  }
 }
 
-@media screen and (min-width: 801px) and (max-width: 901px) {
+@media screen and (min-width: 801px) and (max-width: 900px) {
   .about-right{
     padding: 1rem;
     width: 300px;
     height: 300px;
+  }
+
+  .about-desc {
+    line-height: 1.5rem;
+    font-size: 1.5vw;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1101px){
+  .about-desc {
+    line-height: 1.75rem;
+    font-size: 1.5vw;
+  }
+
+  .about-right{
+    padding: 2rem;
+    width: 350px;
+    height: 350px;
   }
 }

@@ -10,7 +10,7 @@ const Contact = () => {
     <section id="contact" className="section-bg">
       <h1 className="heading">Contact Me</h1>
       <div className="contact-container">
-        <div className="contact-left">
+        <div className="contact-left"  data-aos = "fade-up">
           <form action="" className="form-bg">
             <div className="form-group-wrapper">
               <div className="form-group">
@@ -55,8 +55,7 @@ const Contact = () => {
             </button>
           </form>
         </div>
-        <div className="contact-right">
-
+        <div className="contact-right"  data-aos = "fade-up">
           <div className="icon-div">
             <div className="sm-icon-div">
               <FaPhone className="sm-icons" />

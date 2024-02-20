@@ -6,7 +6,7 @@ const About = () => {
     <section id="about" className="section-bg">
       <h1 className="heading">about &nbsp;me</h1>
       <div className="about-container">
-        <div className="about-left">
+        <div className="about-left" data-aos = "fade-up">
           <p className="about-desc">
             An undergraduate student with a focused and enlightened personality
             with a decent skill set in frontend technologies and graphic
@@ -25,7 +25,7 @@ const About = () => {
             JavaScript, Bootstrap, JQuery, and ReactJs.
           </p>
         </div>
-        <div className="about-right">
+        <div className="about-right" data-aos = "fade-up">
           <img
             src={process.env.PUBLIC_URL + "/assets/profile.png"}
             alt="about-img"

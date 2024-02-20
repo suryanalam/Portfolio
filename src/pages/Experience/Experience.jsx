@@ -6,7 +6,7 @@ const Experience = () => {
     <section id="experience" className="section-bg">
       <h1 className="heading">Work Experience</h1>
       <div className="experience-container">
-        <section className="experience-section-bg">
+        <section className="experience-section-bg" data-aos = "fade-up">
           <section className="company-logo-bg">
             <img
               src={process.env.PUBLIC_URL + "/assets/externsclub.png"}
@@ -41,7 +41,7 @@ const Experience = () => {
           </ul>
         </section>
 
-        <section className="experience-section-bg">
+        <section className="experience-section-bg" data-aos = "fade-up">
           <section className="company-logo-bg">
             <img
               src={process.env.PUBLIC_URL + "/assets/celebal.png"}

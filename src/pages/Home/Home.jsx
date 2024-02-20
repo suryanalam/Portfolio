@@ -3,11 +3,13 @@ import "./home.css";
 
 import Header from "../../components/header/Header";
 
+
+
 const Home = () => {
   return (
     <div id="#home">
       <Header />
-      <section className="home-section">
+      <section className="home-section" data-aos = "fade-up">
         <p className="greeting">Hello, I'm</p>
 
         <h1 className="name">Surya Narayana Murthy Nalam</h1>
