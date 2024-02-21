@@ -8,6 +8,10 @@
     "not ios_saf <= 14.8",
     "not safari <= 14.1",
     "not and_ff <= 115",
-    "not firefox <= 116"
-  ]
+    "not firefox <= 116",
+    "not opera <= 101"
+  ],
+  "hints": {
+    "apple-touch-icons": "off"
+  }
 }

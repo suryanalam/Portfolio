@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .experience-section-bg {
@@ -94,8 +94,12 @@
 
 @media screen and (max-width: 450px) {
 
+  .experience-section-bg{
+    padding-top: 2rem;
+  }
+
   .company-logo-bg {
-    top: -4%;
+    top: -6%;
     width: 120px;
     max-width: 120px;
     height: 60px;
@@ -122,8 +126,12 @@
 
 @media screen and (min-width: 451px) and (max-width: 601px) {
 
+  .experience-section-bg{
+    padding-top: 2rem;
+  }
+
   .company-logo-bg {
-    top: -6%;
+    top: -8%;
     width: 120px;
     max-width: 120px;
     height: 60px;
@@ -148,7 +156,7 @@
   }
 }
 
-@media screen and (min-width: 601px) and (max-width: 768px) {
+@media screen and (min-width: 601px) and (max-width: 1000px) {
 
   .company-logo-bg {
     top: -10%;
@@ -173,33 +181,5 @@
   .work-list li{
     font-size: 1.75dvw;
     line-height: 1.5rem;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1000px) {
-
-  .company-logo-bg {
-    top: -10%;
-    width: 150px;
-    max-width: 150px;
-    height: 75px;
-    max-height: 75px;
-  }
-
-  .role{
-    font-size: 2.75vw;
-  }
-
-  .duration{
-    font-size: 1.75vw;
-  }
-
-  .company-info, .work-list-title{
-    font-size: 2.25dvw;
-  }
-
-  .work-list li{
-    font-size: 1.75dvw;
-    line-height: 1.75rem;
   }
 }

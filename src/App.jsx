@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import 'aos/dist/aos.css'; 
 
+import Header from "./components/header/Header";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Experience from "./pages/Experience/Experience";
@@ -33,6 +34,7 @@ function App() {
 
   return (
     <>
+      <Header />
       <Home />
       <About />
       <Experience />

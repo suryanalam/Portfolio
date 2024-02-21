@@ -101,11 +101,11 @@
 }
 
 .sm-icons{
-    font-size: var(--fz-md);
+    font-size: 1.5vw;
 }
 
 .contact-text{
-    font-size: 1.75vw;
+    font-size: 1.5vw;
 }
 
 .follow-me-div{
@@ -115,7 +115,7 @@
    gap:2rem;
 }
 
-@media screen and (max-width: 701px){
+@media screen and (max-width: 769px){
     .contact-container{
         flex-direction: column;
         gap:2rem;
@@ -153,7 +153,22 @@
         padding: 0.75rem 1rem;
     }
 
+    .sm-icons{
+        font-size: 2.5vw;
+    }
+    
     .contact-text{
         font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 426px) {
+
+    .sm-icons{
+        font-size: 3.5vw;
+    }
+    
+    .contact-text{
+        font-size: 3.5vw;
     }
 }

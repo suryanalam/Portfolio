@@ -12,6 +12,7 @@ const Projects = () => {
         <div className="projects-left" data-aos = "fade-up">
           {projects.map((project, index) => (
             <div
+            key = {index}
               className={
                 index === projectIndex
                   ? "project-title active"
