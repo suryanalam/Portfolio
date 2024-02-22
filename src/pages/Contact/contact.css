@@ -95,13 +95,16 @@
 }
 
 .sm-icon-div:hover{
-    cursor: pointer;
     border: 2px solid var(--clr-aqua);
     background-color: var(--clr-navy);
 }
 
 .sm-icons,.contact-text{
     font-size: 1.25vw;
+}
+
+.contact-text:hover{
+    color: var(--clr-aqua);
 }
 
 .follow-me-div{

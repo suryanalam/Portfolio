@@ -101,7 +101,11 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 2rem;
+  gap: 2.5rem;
+}
+
+.mobile-navlink-wrapper{
+  width: 100%;
 }
 
 .mobile-navlink{
@@ -110,14 +114,16 @@
   cursor: pointer;
   color: var(--clr-white);
   font-family: var(--font-rubik);
+  display: flex;
+  gap:0.5rem;
+  align-items: center;
 }
 
-.mobile-navlink::after{
-  content: '';
+.mobile-navlink-divider{
   margin: 0.5rem 0;
-  height:1px;
-  display: block;
-  background-color: var(--clr-aqua);
+  width: 100%;
+  border: 1px solid var(--clr-aqua);
+  /* background-color: var(--clr-aqua); */
 }
 
 @media screen and (max-width: 601px) {
