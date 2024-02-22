@@ -2,8 +2,8 @@ import React from "react";
 import "./contact.css";
 
 import { FaGithub, FaLinkedin, FaPhone } from "react-icons/fa6";
-import { IoMail } from "react-icons/io5";
 import { FaMapMarkerAlt } from "react-icons/fa";
+import { IoMail } from "react-icons/io5";
 
 const Contact = () => {
   return (

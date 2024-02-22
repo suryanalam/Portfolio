@@ -9,7 +9,6 @@ import Experience from "./pages/Experience/Experience";
 import Projects from "./pages/Projects/Projects";
 import Contact from "./pages/Contact/Contact";
 
-
 AOS.init();
 
 function App() {
