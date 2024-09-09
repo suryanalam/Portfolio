@@ -4,14 +4,12 @@ const Home = () => {
   return (
     <section className="home-bg">
       <p className="greeting">Hello, I'm</p>
-      <h1 className="name">Surya Narayana Murthy Nalam</h1>
-      <span className="job-role">Full Stack Developer</span>
+      <div className="home-title-wrapper">
+        <h1 className="name">Surya Narayana Murthy Nalam</h1>
+        <h4 className="job-role">Full Stack Developer</h4>
+      </div>
       <div className="actions-div">
-        <a
-          href={resume}
-          rel="noreferrer"
-          download="Resume"
-        >
+        <a href={resume} rel="noreferrer" download="Resume">
           <button className="btn">Resume</button>
         </a>
         <a href="mailto:suryanalam3011@gmail.com">

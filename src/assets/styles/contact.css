@@ -1,17 +1,4 @@
-.contact-bg {
-  margin: 2rem auto;
-  width: 90dvw;
-  max-width: 90%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 3rem;
-}
-
 .contact-container {
-  margin: 2rem 0;
   width: 100%;
   max-width: 100%;
   display: flex;
@@ -20,66 +7,47 @@
   justify-content: space-evenly;
 }
 
-.contact-heading {
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  font-size: var(--fz-lg);
-  letter-spacing: 0.5px;
-  font-weight: 600;
-  color: var(--clr-slate);
-}
-
-.icon-div {
+.contact-icon-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
 }
 
-.sm-icon-div {
+.contact-icon-bg {
   padding: 1rem 1.25rem;
-  color: var(--clr-white);
   border-radius: 10px;
-  border: 2px solid var(--clr-aqua-tint);
+  border: 1px solid var(--clr-aqua-tint);
   background-color: var(--clr-light-navy);
+  color: var(--clr-white);
 }
 
-.sm-icon-div:hover {
-  border: 2px solid var(--clr-aqua);
+.contact-icon-bg:hover {
+  border: 1px solid var(--clr-aqua);
   background-color: var(--clr-navy);
 }
 
-.sm-icons,
-.contact-text {
-  font-size: 1.25vw;
+.contact-icon,
+.contact-icon-title {
+  font-size: var(--fz-md);
 }
 
-.contact-text:hover {
+.contact-icon-title:hover {
   color: var(--clr-aqua);
 }
 
-@media screen and (max-width: 1100px) {
-  .sm-icons,
-  .contact-text {
-    font-size: 1.75vw;
-  }
-}
-
-@media screen and (max-width: 701px) {
-  .sm-icon-div {
-    font-size: var(--fz-sm);
+@media screen and (max-width: 600px) {
+  .contact-icon-bg {
     padding: 0.75rem 1rem;
   }
 
-  .sm-icons,
-  .contact-text {
-    font-size: 2.75vw;
+  .contact-container{
+    justify-content: center;
+    gap: 3rem;
   }
-}
 
-@media screen and (max-width: 451px) {
-  .sm-icons,
-  .contact-text {
-    font-size: 3.75vw;
+  .contact-icon,
+  .contact-icon-title {
+    font-size: var(--fz-sm);
   }
 }

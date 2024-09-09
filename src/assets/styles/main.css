@@ -35,6 +35,7 @@
   --fz-lg: 20px;
   --fz-xl: 28px;
   --fz-xxl: 36px;
+  --fz-xxxl: 48px;
 
   --font-rubik: "Rubik", sans-serif;
   --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
@@ -89,7 +90,6 @@ textarea {
   scroll-margin-top: 10dvh;
   width: 100dvw;
   max-width: 100%;
-  min-height: 90dvh;
   display: flex;
   align-items: center;
   justify-content: center;

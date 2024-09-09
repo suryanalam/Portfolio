@@ -20,12 +20,17 @@ const Header = () => {
     }
   }, [mobileMenu]);
 
+  const navigateToHome = () => {
+    navigateToTop(); // scroll to top with a smooth transition
+    window.location.href = window.location.href.split("#")[0]; // set url for the homepage
+  };
+
   return (
     <header className="header-bg">
       <div className="header-wrapper">
         <div className="logo-div">
-          <span className="logo-text" onClick={() => navigateToTop()}>
-              SN
+          <span className="logo-text" onClick={navigateToHome}>
+            SN
           </span>
         </div>
 
