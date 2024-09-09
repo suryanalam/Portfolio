@@ -1,0 +1,85 @@
+.contact-bg {
+  margin: 2rem auto;
+  width: 90dvw;
+  max-width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 3rem;
+}
+
+.contact-container {
+  margin: 2rem 0;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contact-heading {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: var(--fz-lg);
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  color: var(--clr-slate);
+}
+
+.icon-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sm-icon-div {
+  padding: 1rem 1.25rem;
+  color: var(--clr-white);
+  border-radius: 10px;
+  border: 2px solid var(--clr-aqua-tint);
+  background-color: var(--clr-light-navy);
+}
+
+.sm-icon-div:hover {
+  border: 2px solid var(--clr-aqua);
+  background-color: var(--clr-navy);
+}
+
+.sm-icons,
+.contact-text {
+  font-size: 1.25vw;
+}
+
+.contact-text:hover {
+  color: var(--clr-aqua);
+}
+
+@media screen and (max-width: 1100px) {
+  .sm-icons,
+  .contact-text {
+    font-size: 1.75vw;
+  }
+}
+
+@media screen and (max-width: 701px) {
+  .sm-icon-div {
+    font-size: var(--fz-sm);
+    padding: 0.75rem 1rem;
+  }
+
+  .sm-icons,
+  .contact-text {
+    font-size: 2.75vw;
+  }
+}
+
+@media screen and (max-width: 451px) {
+  .sm-icons,
+  .contact-text {
+    font-size: 3.75vw;
+  }
+}

@@ -1,0 +1,143 @@
+.projects-container {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects-left {
+  padding: 1rem;
+  width: 25%;
+  height: fit-content;
+  border-radius: 10px;
+  border: 2px solid var(--clr-aqua-tint);
+  background-color: var(--clr-light-navy);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project-title {
+  padding: 1rem;
+  width: 100%;
+  font-weight: 600;
+  font-size: var(--fz-sm);
+  font-family: var(--font-rubik);
+  border-radius: 10px;
+  background-color: var(--clr-navy);
+  color: var(--clr-white);
+  cursor: pointer;
+}
+
+.active {
+  background-color: var(--clr-white);
+  color: var(--clr-navy);
+}
+
+.projects-right {
+  padding: 1rem;
+  width: 70%;
+  border-radius: 10px;
+  border: 2px solid var(--clr-aqua-tint);
+  background-color: var(--clr-light-navy);
+  font-family: var(--font-mono);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project-name {
+  padding: 0.25rem 0.5rem;
+  font-size: var(--fz-md);
+  border-left: 4px solid var(--clr-aqua-tint);
+  color: var(--clr-aqua);
+}
+
+.project-heading {
+  margin-bottom: 0.5rem;
+  font-size: var(--fz-md);
+  color: var(--clr-white);
+}
+
+.details,
+.technologies {
+  font-size: var(--fz-md);
+}
+
+.technologies-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.technologies-count {
+  font-weight: 600;
+  color: var(--clr-aqua);
+}
+
+.project-link {
+  margin-right: 1rem;
+  font-weight: 600;
+  font-size: var(--fz-md);
+  color: var(--clr-aqua);
+  cursor: pointer;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+  .projects-left {
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projects-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+
+  .projects-left {
+    padding: 1rem;
+    width: 50%;
+    max-width: 50%;
+  }
+
+  .projects-right {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .projects-left {
+    width: 70%;
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .projects-left {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .project-title{
+    font-size: var(--fz-xs);
+  }
+
+  .technologies-div{
+    gap: 1rem 1.5rem;
+  }
+
+  .project-name,
+  .project-heading,
+  .details,
+  .technologies,
+  .project-link {
+    font-size: var(--fz-sm);
+  }
+}

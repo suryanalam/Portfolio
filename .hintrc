@@ -2,16 +2,21 @@
   "extends": [
     "development"
   ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "scroll-margin-top"
+        ]
+      }
+    ]
+  },
   "browserslist": [
     "defaults",
     "not ie 11",
-    "not ios_saf <= 14.8",
-    "not safari <= 14.1",
-    "not and_ff <= 115",
-    "not firefox <= 116",
-    "not opera <= 101"
-  ],
-  "hints": {
-    "apple-touch-icons": "off"
-  }
+    "not and_ff <= 127",
+    "not firefox <= 126",
+    "not firefox <= 128"
+  ]
 }

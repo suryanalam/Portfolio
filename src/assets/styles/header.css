@@ -1,0 +1,158 @@
+.header-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  max-width: 100%;
+  height: 10dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-backdrop-filter: blur(25px) saturate(120%);
+  backdrop-filter: blur(25px) saturate(120%);
+  z-index: 9;
+}
+
+.header-wrapper {
+  margin: 0 2rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  font-family: var(--font-rubik);
+  color: var(--clr-light-slate);
+  background: transparent;
+}
+
+.logo-div {
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: var(--clr-navy);
+  box-shadow: 0px 0px 6px var(--clr-aqua);
+}
+
+.logo-text {
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--clr-aqua);
+  font-size: var(--fz-md);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.navlink,
+.mobile-navlink {
+  font-size: var(--fz-md);
+  cursor: pointer;
+}
+
+.navlink:hover,
+.mobile-navlink:hover {
+  color: var(--clr-aqua);
+}
+
+.menu-icon-div {
+  display: none;
+}
+
+.menu-icon {
+  font-size: var(--fz-lg);
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 0;
+  padding: 1.5rem;
+  width: 100dvw;
+  max-width: 100%;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+  transition: left 0.5s ease-in-out;
+  background-color: var(--clr-navy);
+  z-index: 99;
+}
+
+.open {
+  left: 0;
+}
+
+.close {
+  left: -100%;
+}
+
+.close-menu-div, .mobile-navlink-div {
+  width: 100%;
+}
+
+.close-menu-icon {
+  font-size: var(--fz-lg);
+  color: var(--clr-aqua);
+  cursor: pointer;
+  float: right;
+}
+
+.mobile-navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.mobile-navlink {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.mobile-navlink-divider {
+  margin: 0.5rem 0;
+  border: 1px solid var(--clr-aqua-tint);
+}
+
+@media screen and (min-width: 1024px) {
+  .header-wrapper {
+    width: 1000px;
+    max-width: 1000px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo-text {
+    font-size: var(--fz-sm);
+  }
+
+  .navlink {
+    font-size: var(--fz-sm);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    display: none;
+  }
+
+  .menu-icon-div {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .header-wrapper {
+    margin: 0 1rem;
+  }
+}

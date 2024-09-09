@@ -1,0 +1,28 @@
+.about-desc-bg{
+  padding: 2rem;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  background-color: var(--clr-light-navy);
+  border-radius: 10px;
+}
+
+.about-desc {
+  line-height: 1.5rem;
+  text-align: justify;
+  font-size: var(--fz-md);
+  color: var(--clr-slate);
+}
+
+@media screen and (max-width: 426px) {
+  .about-desc-bg{
+    padding: 1rem;
+  }
+
+  .about-desc {
+    font-size: var(--fz-sm);
+  }
+}

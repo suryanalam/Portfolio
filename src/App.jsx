@@ -1,20 +1,28 @@
-import { useState, useEffect } from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+import { useEffect, useState } from "react";
+import "aos/dist/aos.css";
+import AOS from "aos";
 
-import Header from "./components/header/Header";
-import Home from "./pages/Home/Home";
-import About from "./pages/About/About";
-import Experience from "./pages/Experience/Experience";
-import Projects from "./pages/Projects/Projects";
-import Contact from "./pages/Contact/Contact";
+// helper functions
+import navigateToTop from "./utils/navigate";
 
+// components
+import Header from "./components/Header";
+
+// pages
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Experience from "./pages/Experience";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
+
+// initialize the AOS library.
 AOS.init();
 
 function App() {
   const [showTopBtn, setShowTopBtn] = useState(false);
 
-  useEffect(() => {
+  // Register an event listener to track scroll position
+  useEffect(()=>{
     window.addEventListener("scroll", () => {
       if (window.scrollY > 400) {
         setShowTopBtn(true);
@@ -22,14 +30,7 @@ function App() {
         setShowTopBtn(false);
       }
     });
-  }, []);
-
-  const goToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
+  },[])
 
   return (
     <>
@@ -39,9 +40,8 @@ function App() {
       <Experience />
       <Projects />
       <Contact />
-
       {showTopBtn && (
-        <button className="navigate-btn" onClick={goToTop}>
+        <button className="navigate-btn" onClick={() => navigateToTop()}>
           <span className="navigate-icon">⬆</span>
         </button>
       )}

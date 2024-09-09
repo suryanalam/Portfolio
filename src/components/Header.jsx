@@ -1,21 +1,16 @@
-import "./header.css";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import navigateToTop from "../utils/navigate";
+
+// icons
+import { MdWork } from "react-icons/md";
 import { TiThMenu } from "react-icons/ti";
 import { IoClose } from "react-icons/io5";
-import { FaUserCircle } from "react-icons/fa";
-import { MdWork } from "react-icons/md";
 import { FaLaptopCode } from "react-icons/fa";
+import { FaUserCircle } from "react-icons/fa";
 import { IoInformationCircleSharp } from "react-icons/io5";
 
 const Header = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
-
-  const goToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
 
   useEffect(() => {
     if (mobileMenu) {
@@ -27,31 +22,35 @@ const Header = () => {
 
   return (
     <header className="header-bg">
-      <div className="logo-div">
-        <span className="logo-text" onClick={goToTop}>
-          SN
-        </span>
+      <div className="header-wrapper">
+        <div className="logo-div">
+          <span className="logo-text" onClick={() => navigateToTop()}>
+              SN
+          </span>
+        </div>
+
+        <nav className="navbar">
+          <a href="#about" className="navlink">
+            About
+          </a>
+          <a href="#experience" className="navlink">
+            Experience
+          </a>
+          <a href="#projects" className="navlink">
+            Projects
+          </a>
+          <a href="#contact" className="navlink">
+            Contact
+          </a>
+        </nav>
+
+        <div
+          className="menu-icon-div"
+          onClick={() => setMobileMenu(!mobileMenu)}
+        >
+          <TiThMenu className="menu-icon" />
+        </div>
       </div>
-
-      <nav className="navbar">
-        <a href="#about" className="navlink">
-          About
-        </a>
-        <a href="#experience" className="navlink">
-          Experience
-        </a>
-        <a href="#projects" className="navlink">
-          Projects
-        </a>
-        <a href="#contact" className="navlink">
-          Contact
-        </a>
-      </nav>
-
-      <div className="menu-icon-div" onClick={() => setMobileMenu(!mobileMenu)}>
-        <TiThMenu className="menu-icon" />
-      </div>
-
       <div
         id="mobile-menu"
         className={mobileMenu ? "mobile-menu open" : "mobile-menu close"}
@@ -63,7 +62,7 @@ const Header = () => {
           <IoClose className="close-menu-icon" />
         </div>
         <nav className="mobile-navbar">
-          <div className="mobile-navlink-wrapper">
+          <div className="mobile-navlink-div">
             <a
               href="#about"
               className="mobile-navlink"
@@ -74,7 +73,7 @@ const Header = () => {
             </a>
             <hr className="mobile-navlink-divider" />
           </div>
-          <div className="mobile-navlink-wrapper">
+          <div className="mobile-navlink-div">
             <a
               href="#experience"
               className="mobile-navlink"
@@ -85,8 +84,7 @@ const Header = () => {
             </a>
             <hr className="mobile-navlink-divider" />
           </div>
-
-          <div className="mobile-navlink-wrapper">
+          <div className="mobile-navlink-div">
             <a
               href="#projects"
               className="mobile-navlink"
@@ -97,8 +95,7 @@ const Header = () => {
             </a>
             <hr className="mobile-navlink-divider" />
           </div>
-
-          <div className="mobile-navlink-wrapper">
+          <div className="mobile-navlink-div">
             <a
               href="#contact"
               className="mobile-navlink"
