@@ -5,10 +5,10 @@ const About = () => {
         <h1 className="heading">About Me</h1>
         <div className="about-desc-bg" data-aos="fade-up">
           <p className="about-desc">
-            A passionate Full Stack developer with 1+ year of experience in web
-            development. He is excited about creating web solutions that are
-            user-friendly, scalable, and secure to make a positive impact on
-            society and the environment.
+            A passionate Full Stack Developer with over 2 years of experience in
+            building scalable, user-friendly, and secure web applications that
+            support robust product development and deliver seamless digital
+            experiences.
             <br />
             <br />
             Currently, He is working as an SDE1-Fronted at Rentomojo and also
@@ -16,15 +16,15 @@ const About = () => {
             working with Externsclub and Celebal Technologies.
             <br />
             <br />
-            He is skilled in web technologies like HTML, CSS, JavaScript,
-            ReactJS, NodeJS, Express, Laravel, MySQL, MongoDB, and Version
-            Control (Git, GitHub).
+            He is skilled in web technologies like HTML5, CSS3, JavaScript,
+            TypeScript, React, Vue, Nuxt, Node.js, Express.js, MongoDB and Tools
+            including Git(Version Control), GitHub, Postman, Mongoose, Figma.
             <br />
             <br />
-            He is always eager to learn new skills and tools and to collaborate
-            with other developers and mentors. His long-term goal is to become a
-            proficient and innovative full-stack developer who can deliver
-            high-quality products and services.
+            He is a fast learner, always eager to explore new technologies,
+            collaborate with peers, and grow through mentorship. His long-term
+            goal is to evolve into a well-rounded, innovative full stack
+            developer capable of delivering high-quality digital solutions.
           </p>
         </div>
       </div>

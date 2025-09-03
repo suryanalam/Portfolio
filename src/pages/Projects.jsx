@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import projects from "../utils/projects";
+import { projects } from "../utils/data.js";
 
 const Projects = () => {
   const [currentProjectId, setCurrentProjectId] = useState(1);
@@ -25,7 +25,7 @@ const Projects = () => {
 
   // set "currentProject" with details of 1st project (onMount)
   useEffect(() => {
-      handleProduct(currentProjectId);
+    handleProduct(currentProjectId);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

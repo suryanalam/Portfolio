@@ -3,7 +3,7 @@ import "aos/dist/aos.css";
 import AOS from "aos";
 
 // helper functions
-import navigateToTop from "./utils/navigate";
+import navigateToTop from "./utils/navigateToTop";
 
 // components
 import Header from "./components/Header";

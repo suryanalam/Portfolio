@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import navigateToTop from "../utils/navigate";
+import navigateToTop from "../utils/navigateToTop";
 
 // icons
 import { MdWork } from "react-icons/md";

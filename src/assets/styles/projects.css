@@ -112,6 +112,13 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .projects-left {
+    width: 60%;
+    max-width: 60%;
+  }
+}
+
 @media screen and (max-width: 520px) {
   .projects-left {
     width: 70%;
